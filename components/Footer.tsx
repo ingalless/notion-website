@@ -26,7 +26,24 @@ export const Footer: React.FC<{
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.copyright}>Copyright 2021 {config.author}</div>
+      <div className={styles.copyright}>
+        Copyright 2021 {config.author}
+        <br />
+        Powered by{' '}
+        <a
+          className='notion-link'
+          href='https://www.notion.so/ingalless/Ingalless-899b434a1a8f406b9071d8cf249f3ab4'
+        >
+          Notion
+        </a>{' '}
+        and{' '}
+        <a
+          className='notion-link'
+          href='https://github.com/transitive-bullshit/nextjs-notion-starter-kit'
+        >
+          This Starter
+        </a>
+      </div>
 
       {hasMounted ? (
         <div className={styles.settings}>
